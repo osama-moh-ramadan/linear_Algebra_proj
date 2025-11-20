@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear System Solver (Gauss & Gauss-Jordan)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Linear System of Equations Solver</h1>
+        
+        <div class="input-section">
+            <label for="n">Enter Number of Equations (N):</label>
+            <input type="number" id="n" value="3" min="2">
+            <button id="build">Build Matrix</button>
+        </div>
+
+        <div class="Matrix-Container">
+            <h2>Augmented Matrix (A | b)</h2>
+            <div class="Matrix">
+                <table id="MatrixTable">
+                    </table>
+            </div>
+        </div>
+
+        <div class="buttons-section">
+            <button id="solveGaussianBtn" class="gaussian-btn">Solve using Gaussian Elimination</button>
+            <button id="solveGaussJordanBtn" class="gauss-jordan-btn">Solve using Gauss-Jordan Elimination</button>
+            <button id="clear" class="clear-btn">Clear All</button>
+        </div>
+
+        <div class="output-container">
+            <h2>Solution Steps and Results</h2>
+            <div id="Output">
+                <div class="Area">The solution steps will appear here after clicking a Solve button.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
